@@ -1,13 +1,10 @@
 ---
 title: "README"
-date: 2021-05-27
-draft: false
+date: 2021-09-22
+draft: true
 layout: default
-parent: Boilerplates
+parent:
 ---
-
-<!-- HEADS UP! To avoid retyping too much info. Do a search and replace with your text editor for the following:
-repo_name, project_name -->
 
 <!-- SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -21,21 +18,18 @@ repo_name, project_name -->
     <img src="images/hbg-github-logo-combo.png" alt="Logo" width="300">
   </a>
 </p>
-<h3>project_name</h3>
+<h3>Daisy demo</h3>
 <p>
   Everything you need to be a developer at Helsingborg Stad.
   <br />
-  <a href="https://github.com/helsingborg-stad/dev-guide/issues">Report Bug</a>
+  <a href="https://github.com/helsingborg-stad/app-daisy-demo/issues">Report Bug</a>
   ·
-  <a href="https://github.com/helsingborg-stad/dev-guide/issues">Request Feature</a>
+  <a href="https://github.com/helsingborg-stad/app-daisy-demo/issues">Request Feature</a>
 </p>
-
-
-
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [About project_name](#about-project_name)
+- [About Daisy demo](#about-daisy-demo)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -49,21 +43,21 @@ repo_name, project_name -->
 
 
 
-## About project_name
+## About Daisy demo
 
-[![project_name Screen Shot][product-screenshot]](https://example.com)
+[![Daisy demo Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`repo_name`, `project_name`
+`app-daisy-demo`, `Daisy demo`
 
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Swift](https://swift.org/)
+* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+* [Xcode](https://developer.apple.com/xcode/)
 
 
 
@@ -85,7 +79,7 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/helsingborg-stad/repo_name.git
+git clone https://github.com/helsingborg-stad/app-daisy-demo.git
 ```
 2. Install NPM packages
 ```sh
@@ -131,23 +125,16 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the [MIT License][license-url].
 
 
-
-## Acknowledgements
-
-- [othneildrew Best README Template](https://github.com/othneildrew/Best-README-Template)
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/helsingborg-stad/repo_name.svg?style=flat-square
-[contributors-url]: https://github.com/helsingborg-stad/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/helsingborg-stad/repo_name.svg?style=flat-square
-[forks-url]: https://github.com/helsingborg-stad/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/helsingborg-stad/repo_name.svg?style=flat-square
-[stars-url]: https://github.com/helsingborg-stad/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/helsingborg-stad/repo_name.svg?style=flat-square
-[issues-url]: https://github.com/helsingborg-stad/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/helsingborg-stad/repo_name.svg?style=flat-square
-[license-url]: https://raw.githubusercontent.com/helsingborg-stad/repo_name/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/helsingborg-stad/app-daisy-demo.svg?style=flat-square
+[contributors-url]: https://github.com/helsingborg-stad/app-daisy-demo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/helsingborg-stad/app-daisy-demo.svg?style=flat-square
+[forks-url]: https://github.com/helsingborg-stad/app-daisy-demo/network/members
+[stars-shield]: https://img.shields.io/github/stars/helsingborg-stad/app-daisy-demo.svg?style=flat-square
+[stars-url]: https://github.com/helsingborg-stad/app-daisy-demo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/helsingborg-stad/app-daisy-demo.svg?style=flat-square
+[issues-url]: https://github.com/helsingborg-stad/app-daisy-demo/issues
+[license-shield]: https://img.shields.io/github/license/helsingborg-stad/app-daisy-demo.svg?style=flat-square
+[license-url]: https://raw.githubusercontent.com/helsingborg-stad/app-daisy-demo/master/LICENSE
 [product-screenshot]: images/screenshot.png
