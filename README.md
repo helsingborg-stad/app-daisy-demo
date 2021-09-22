@@ -1,11 +1,3 @@
----
-title: "README"
-date: 2021-09-22
-draft: true
-layout: default
-parent:
----
-
 <!-- SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -15,7 +7,7 @@ parent:
 
 <p>
   <a href="https://github.com/helsingborg-stad/app-daisy-demo">
-    <img src="images/hbg-github-logo-combo.png" alt="Logo" width="300">
+    <img src="hbg-github-logo-combo.png" alt="Logo" width="300">
   </a>
 </p>
 <h3>Daisy demo</h3>
@@ -39,20 +31,14 @@ parent:
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
-
 
 
 ## About Daisy demo
 
-[![Daisy demo Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`app-daisy-demo`, `Daisy demo`
-
-
-
+<!--
+  TODO: add demo screen shot
+  [![Daisy demo Screen Shot][product-screenshot]](https://example.com)
+-->
 ### Built With
 
 * [Swift](https://swift.org/)
@@ -136,5 +122,5 @@ Distributed under the [MIT License][license-url].
 [issues-shield]: https://img.shields.io/github/issues/helsingborg-stad/app-daisy-demo.svg?style=flat-square
 [issues-url]: https://github.com/helsingborg-stad/app-daisy-demo/issues
 [license-shield]: https://img.shields.io/github/license/helsingborg-stad/app-daisy-demo.svg?style=flat-square
-[license-url]: https://raw.githubusercontent.com/helsingborg-stad/app-daisy-demo/master/LICENSE
+[license-url]: https://github.com/helsingborg-stad/app-daisy-demo/LICENSE
 [product-screenshot]: images/screenshot.png
