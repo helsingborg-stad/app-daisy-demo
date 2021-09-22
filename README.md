@@ -1,4 +1,5 @@
 <!-- SHIELDS -->
+![platform][platform-shield]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -122,5 +123,6 @@ Distributed under the [MIT License][license-url].
 [issues-shield]: https://img.shields.io/github/issues/helsingborg-stad/app-daisy-demo.svg?style=flat-square
 [issues-url]: https://github.com/helsingborg-stad/app-daisy-demo/issues
 [license-shield]: https://img.shields.io/github/license/helsingborg-stad/app-daisy-demo.svg?style=flat-square
-[license-url]: https://github.com/helsingborg-stad/app-daisy-demo/LICENSE
+[license-url]: https://github.com/helsingborg-stad/app-daisy-demo/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png
+[platform-shield]: https://img.shields.io/badge/platform-iOS-blue.svg?style=flat
