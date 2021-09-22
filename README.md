@@ -125,4 +125,4 @@ Distributed under the [MIT License][license-url].
 [license-shield]: https://img.shields.io/github/license/helsingborg-stad/app-daisy-demo.svg?style=flat-square
 [license-url]: https://github.com/helsingborg-stad/app-daisy-demo/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png
-[platform-shield]: https://img.shields.io/badge/platform-iOS-blue.svg?style=flat
+[platform-shield]: https://img.shields.io/badge/platform-iOS-blue.svg?style=flat-square
