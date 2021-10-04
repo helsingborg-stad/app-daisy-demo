@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88BB70E1270AE60D00717A94 /* Weather in Frameworks */ = {isa = PBXBuildFile; productRef = 88BB70E0270AE60D00717A94 /* Weather */; };
+		88DBC33027070460000BE5B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DBC32F27070460000BE5B5 /* HomeView.swift */; };
+		88DBC33227070473000BE5B5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DBC33127070473000BE5B5 /* WeatherView.swift */; };
 		F6037E3A26FB1E79008900A3 /* DaisyDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6037E3926FB1E79008900A3 /* DaisyDemoApp.swift */; };
 		F6037E3C26FB1E79008900A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6037E3B26FB1E79008900A3 /* ContentView.swift */; };
 		F6037E3E26FB1E7B008900A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6037E3D26FB1E7B008900A3 /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88DBC32F27070460000BE5B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		88DBC33127070473000BE5B5 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		F6037E3626FB1E79008900A3 /* DaisyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaisyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6037E3926FB1E79008900A3 /* DaisyDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyDemoApp.swift; sourceTree = "<group>"; };
 		F6037E3B26FB1E79008900A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +31,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BB70E1270AE60D00717A94 /* Weather in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88BB70DF270AE60D00717A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88DBC3282707018A000BE5B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88DBC33127070473000BE5B5 /* WeatherView.swift */,
+				F6037E3B26FB1E79008900A3 /* ContentView.swift */,
+				88DBC32F27070460000BE5B5 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F6037E2D26FB1E79008900A3 = {
 			isa = PBXGroup;
 			children = (
 				F6037E3826FB1E79008900A3 /* DaisyDemo */,
 				F6037E3726FB1E79008900A3 /* Products */,
+				88BB70DF270AE60D00717A94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +75,8 @@
 		F6037E3826FB1E79008900A3 /* DaisyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88DBC3282707018A000BE5B5 /* Views */,
 				F6037E3926FB1E79008900A3 /* DaisyDemoApp.swift */,
-				F6037E3B26FB1E79008900A3 /* ContentView.swift */,
 				F6037E3D26FB1E7B008900A3 /* Assets.xcassets */,
 				F6037E3F26FB1E7B008900A3 /* Preview Content */,
 			);
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = DaisyDemo;
+			packageProductDependencies = (
+				88BB70E0270AE60D00717A94 /* Weather */,
+			);
 			productName = DaisyDemo;
 			productReference = F6037E3626FB1E79008900A3 /* DaisyDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = F6037E2D26FB1E79008900A3;
+			packageReferences = (
+				88DBC3272706F6BF000BE5B5 /* XCRemoteSwiftPackageReference "spm-weather" */,
+			);
 			productRefGroup = F6037E3726FB1E79008900A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +169,8 @@
 			files = (
 				F6037E3C26FB1E79008900A3 /* ContentView.swift in Sources */,
 				F6037E3A26FB1E79008900A3 /* DaisyDemoApp.swift in Sources */,
+				88DBC33227070473000BE5B5 /* WeatherView.swift in Sources */,
+				88DBC33027070460000BE5B5 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DBC3272706F6BF000BE5B5 /* XCRemoteSwiftPackageReference "spm-weather" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/helsingborg-stad/spm-weather.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88BB70E0270AE60D00717A94 /* Weather */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DBC3272706F6BF000BE5B5 /* XCRemoteSwiftPackageReference "spm-weather" */;
+			productName = Weather;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6037E2E26FB1E79008900A3 /* Project object */;
 }
