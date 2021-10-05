@@ -17,7 +17,6 @@
 		F65C7975270C45E200398FD5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C7974270C45E200398FD5 /* WeatherView.swift */; };
 		F65C797D270C586C00398FD5 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C797C270C586C00398FD5 /* MealsView.swift */; };
 		F65C7980270C590500398FD5 /* Meals in Frameworks */ = {isa = PBXBuildFile; productRef = F65C797F270C590500398FD5 /* Meals */; };
-		F681A7FE270B3A8000B2A064 /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681A7FD270B3A8000B2A064 /* DemoList.swift */; };
 		F681A800270B3A9700B2A064 /* ExempelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681A7FF270B3A9700B2A064 /* ExempelView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		F65C7972270C45BB00398FD5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = DaisyDemo/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		F65C7974270C45E200398FD5 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		F65C797C270C586C00398FD5 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
-		F681A7FD270B3A8000B2A064 /* DemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoList.swift; sourceTree = "<group>"; };
 		F681A7FF270B3A9700B2A064 /* ExempelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				F65C7972270C45BB00398FD5 /* ContentView.swift */,
-				F681A7FD270B3A8000B2A064 /* DemoList.swift */,
 				F681A7FF270B3A9700B2A064 /* ExempelView.swift */,
 				884B04ED270C4DD6008ABE91 /* HomeView.swift */,
 				884B04EF270C544E008ABE91 /* InstructionsView.swift */,
@@ -184,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65C7975270C45E200398FD5 /* WeatherView.swift in Sources */,
-				F681A7FE270B3A8000B2A064 /* DemoList.swift in Sources */,
 				F6037E3A26FB1E79008900A3 /* DaisyDemoApp.swift in Sources */,
 				884B04EE270C4DD6008ABE91 /* HomeView.swift in Sources */,
 				884B04F0270C544E008ABE91 /* InstructionsView.swift in Sources */,
