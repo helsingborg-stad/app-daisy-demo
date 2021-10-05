@@ -14,6 +14,9 @@ struct DemoList: View {
                 NavigationLink(destination: {ExempelView()}) {
                     Text("Exempel")
                 }
+                NavigationLink(destination: {MealsView()}) {
+                    Text("Meals")
+                }
             }
             .navigationTitle("Demos")
         }
