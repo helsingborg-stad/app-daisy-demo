@@ -13,7 +13,12 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("BackgroundColor").edgesIgnoringSafeArea(.all)
+                LinearGradient(
+                    gradient: Gradient(colors: [.white, Color("LightGray")]),
+                    startPoint: UnitPoint(x: 0.2, y: 0.2),
+                    endPoint: .bottomTrailing
+                )
+                
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 20)
                 {
                     NavigationLink(destination: { WeatherView() }) {
@@ -39,8 +44,10 @@ struct HomeView: View {
                 .navigationTitle("Demos")
                 .toolbar {
                     Button(action: { showingInstructions.toggle() }) {
+                        
                         Image(systemName: "questionmark.circle.fill")
                             .accessibilityLabel("User Profile")
+                            .foregroundColor(.gray)
                     }
                 }
                 .sheet(isPresented: $showingInstructions) {
@@ -58,7 +65,7 @@ struct IconView: View {
     var body: some View {
         VStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(Color.white)
                     .shadow(radius: 4)
                 Text(icon)
