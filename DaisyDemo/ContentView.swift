@@ -9,7 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        DemoList()
+        VStack(spacing: 0) {
+            HomeView()
+            
+            HStack {
+                Image(systemName: "mic.circle.fill").foregroundColor(.gray)
+                    .font(.largeTitle)
+            }
+            .frame(
+              minWidth: 0,
+              maxWidth: .infinity,
+              minHeight: 80,
+              maxHeight: 80,
+              alignment: .center
+            )
+            .background(Color("MenuBottomColor"))
+        }
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
