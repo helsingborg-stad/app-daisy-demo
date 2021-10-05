@@ -13,6 +13,8 @@
 		F6037E4126FB1E7B008900A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6037E4026FB1E7B008900A3 /* Preview Assets.xcassets */; };
 		F65C7973270C45BB00398FD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C7972270C45BB00398FD5 /* ContentView.swift */; };
 		F65C7975270C45E200398FD5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C7974270C45E200398FD5 /* WeatherView.swift */; };
+		F65C797D270C586C00398FD5 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C797C270C586C00398FD5 /* MealsView.swift */; };
+		F65C7980270C590500398FD5 /* Meals in Frameworks */ = {isa = PBXBuildFile; productRef = F65C797F270C590500398FD5 /* Meals */; };
 		F681A7FE270B3A8000B2A064 /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681A7FD270B3A8000B2A064 /* DemoList.swift */; };
 		F681A800270B3A9700B2A064 /* ExempelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681A7FF270B3A9700B2A064 /* ExempelView.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,7 @@
 		F6037E4026FB1E7B008900A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F65C7972270C45BB00398FD5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = DaisyDemo/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		F65C7974270C45E200398FD5 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		F65C797C270C586C00398FD5 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		F681A7FD270B3A8000B2A064 /* DemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoList.swift; sourceTree = "<group>"; };
 		F681A7FF270B3A9700B2A064 /* ExempelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BB70E1270AE60D00717A94 /* Weather in Frameworks */,
+				F65C7980270C590500398FD5 /* Meals in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +94,7 @@
 				F65C7972270C45BB00398FD5 /* ContentView.swift */,
 				F681A7FD270B3A8000B2A064 /* DemoList.swift */,
 				F681A7FF270B3A9700B2A064 /* ExempelView.swift */,
+				F65C797C270C586C00398FD5 /* MealsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			name = DaisyDemo;
 			packageProductDependencies = (
 				88BB70E0270AE60D00717A94 /* Weather */,
+				F65C797F270C590500398FD5 /* Meals */,
 			);
 			productName = DaisyDemo;
 			productReference = F6037E3626FB1E79008900A3 /* DaisyDemo.app */;
@@ -143,6 +149,7 @@
 			mainGroup = F6037E2D26FB1E79008900A3;
 			packageReferences = (
 				88DBC3272706F6BF000BE5B5 /* XCRemoteSwiftPackageReference "spm-weather" */,
+				F65C797E270C590500398FD5 /* XCRemoteSwiftPackageReference "spm-meals" */,
 			);
 			productRefGroup = F6037E3726FB1E79008900A3 /* Products */;
 			projectDirPath = "";
@@ -175,6 +182,7 @@
 				F6037E3A26FB1E79008900A3 /* DaisyDemoApp.swift in Sources */,
 				F65C7973270C45BB00398FD5 /* ContentView.swift in Sources */,
 				F681A800270B3A9700B2A064 /* ExempelView.swift in Sources */,
+				F65C797D270C586C00398FD5 /* MealsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +397,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		F65C797E270C590500398FD5 /* XCRemoteSwiftPackageReference "spm-meals" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/helsingborg-stad/spm-meals.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -396,6 +412,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 88DBC3272706F6BF000BE5B5 /* XCRemoteSwiftPackageReference "spm-weather" */;
 			productName = Weather;
+		};
+		F65C797F270C590500398FD5 /* Meals */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F65C797E270C590500398FD5 /* XCRemoteSwiftPackageReference "spm-meals" */;
+			productName = Meals;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
