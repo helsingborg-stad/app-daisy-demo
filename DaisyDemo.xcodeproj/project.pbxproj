@@ -94,13 +94,13 @@
 		F681A7FC270B3A5F00B2A064 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F65C7974270C45E200398FD5 /* WeatherView.swift */,
 				F65C7972270C45BB00398FD5 /* ContentView.swift */,
 				F681A7FD270B3A8000B2A064 /* DemoList.swift */,
 				F681A7FF270B3A9700B2A064 /* ExempelView.swift */,
-				F65C797C270C586C00398FD5 /* MealsView.swift */,
 				884B04ED270C4DD6008ABE91 /* HomeView.swift */,
 				884B04EF270C544E008ABE91 /* InstructionsView.swift */,
+				F65C797C270C586C00398FD5 /* MealsView.swift */,
+				F65C7974270C45E200398FD5 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
