@@ -24,7 +24,7 @@ struct ContentView: View {
               alignment: .center
             )
             .background(Color("MenuBottomColor"))
-        }
+            .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray), alignment: .top)        }
         .edgesIgnoringSafeArea(.bottom)
     }
 }
