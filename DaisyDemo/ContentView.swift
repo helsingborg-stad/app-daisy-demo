@@ -9,22 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 0) {
-            HomeView()
-            
-            HStack {
-                Image(systemName: "mic.circle.fill").foregroundColor(.gray)
-                    .font(.largeTitle)
-            }
-            .frame(
-              minWidth: 0,
-              maxWidth: .infinity,
-              minHeight: 80,
-              maxHeight: 80,
-              alignment: .center
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [.white, Color("LightGray")]),
+                startPoint: UnitPoint(x: 0.2, y: 0.2),
+                endPoint: .bottomTrailing
             )
-            .background(Color("MenuBottomColor"))
-            .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray), alignment: .top)        }
+            
+            VStack(spacing: 0) {
+                HomeView()
+                HStack {
+                    Image(systemName: "mic.circle.fill").foregroundColor(.gray)
+                        .font(.largeTitle)
+                }
+                .frame(
+                    minWidth: 0,
+                    maxWidth: .infinity,
+                    minHeight: 100,
+                    maxHeight: 100,
+                    alignment: .center
+                )
+            }
+        }
         .edgesIgnoringSafeArea(.bottom)
     }
 }
