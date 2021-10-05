@@ -19,39 +19,41 @@ struct HomeView: View {
                     endPoint: .bottomTrailing
                 )
                 
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 20)
-                {
-                    NavigationLink(destination: { WeatherView() }) {
-                        IconView(icon: "⛅️", title: "Weather")
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 20)
+                    {
+                        NavigationLink(destination: { WeatherView() }) {
+                            IconView(icon: "⛅️", title: "Weather")
+                        }
+                        NavigationLink(destination: { MealsView() }) {
+                            IconView(icon: "🍔", title: "Meals")
+                        }
+                        NavigationLink(destination: { ExempelView() }) {
+                            IconView(icon: "🏖", title: "Exempel")
+                        }
+                        NavigationLink(destination: { ExempelView() }) {
+                            IconView(icon: "🦾", title: "Exempel")
+                        }
+                        NavigationLink(destination: { ExempelView() }) {
+                            IconView(icon: "🐷", title: "Exempel")
+                        }
+                        NavigationLink(destination: { ExempelView() }) {
+                            IconView(icon: "🧙‍♂️", title: "Exempel")
+                        }
                     }
-                    NavigationLink(destination: { MealsView() }) {
-                        IconView(icon: "🍔", title: "Meals")
+                    .padding()
+                    .navigationTitle("Demos")
+                    .toolbar {
+                        Button(action: { showingInstructions.toggle() }) {
+                            
+                            Image(systemName: "questionmark.circle.fill")
+                                .accessibilityLabel("User Profile")
+                                .foregroundColor(.gray)
+                        }
                     }
-                    NavigationLink(destination: { ExempelView() }) {
-                        IconView(icon: "🏖", title: "Exempel")
+                    .sheet(isPresented: $showingInstructions) {
+                        InstructionsView()
                     }
-                    NavigationLink(destination: { ExempelView() }) {
-                        IconView(icon: "🦾", title: "Exempel")
-                    }
-                    NavigationLink(destination: { ExempelView() }) {
-                        IconView(icon: "🐷", title: "Exempel")
-                    }
-                    NavigationLink(destination: { ExempelView() }) {
-                        IconView(icon: "🧙‍♂️", title: "Exempel")
-                    }
-                }
-                .padding()
-                .navigationTitle("Demos")
-                .toolbar {
-                    Button(action: { showingInstructions.toggle() }) {
-                        
-                        Image(systemName: "questionmark.circle.fill")
-                            .accessibilityLabel("User Profile")
-                            .foregroundColor(.gray)
-                    }
-                }
-                .sheet(isPresented: $showingInstructions) {
-                    InstructionsView()
                 }
             }
         }
