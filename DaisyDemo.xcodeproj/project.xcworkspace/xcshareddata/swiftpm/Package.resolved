@@ -11,12 +11,30 @@
         }
       },
       {
+        "package": "Meals",
+        "repositoryURL": "https://github.com/helsingborg-stad/spm-meals.git",
+        "state": {
+          "branch": null,
+          "revision": "9bc0aafa3ee143bd743e312a369f301219f59ed8",
+          "version": "0.1.1"
+        }
+      },
+      {
         "package": "Weather",
         "repositoryURL": "https://github.com/helsingborg-stad/spm-weather.git",
         "state": {
           "branch": null,
           "revision": "99c79a6e61c121a48b550058e4c1921d86c21490",
           "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SwiftSoup",
+        "repositoryURL": "https://github.com/scinfu/SwiftSoup.git",
+        "state": {
+          "branch": null,
+          "revision": "02c63b7be50bda384f22c56c64d347231754a07e",
+          "version": "2.3.3"
         }
       }
     ]
