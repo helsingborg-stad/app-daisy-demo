@@ -42,6 +42,8 @@ struct ListOfMealsView: View {
                 }
             }
         }
+        .navigationTitle("Meals")
+        .navigationBarTitleDisplayMode(.inline)
         .onReceive(meals.publisher()) { featchedMeals in
             mealItems = featchedMeals
         }

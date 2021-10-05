@@ -19,9 +19,8 @@ struct HomeView: View {
                     NavigationLink(destination: { WeatherView() }) {
                         IconView(icon: "⛅️", title: "Weather")
                     }
-                    
-                    NavigationLink(destination: { ExempelView() }) {
-                        IconView(icon: "🚀", title: "Exempel")
+                    NavigationLink(destination: { MealsView() }) {
+                        IconView(icon: "🍔", title: "Meals")
                     }
                     NavigationLink(destination: { ExempelView() }) {
                         IconView(icon: "🏖", title: "Exempel")

@@ -45,7 +45,6 @@ struct WeatherView: View {
         }
         .navigationTitle("Weather")
         .navigationBarTitleDisplayMode(.inline)
-        
     }
 }
 
