@@ -39,13 +39,13 @@ struct WeatherView: View {
     @State var weatherData: WeatherData? = nil
     
     var body: some View {
-        VStack {
-            Text("Weather").font(.title2)
-            WeatherDetailView(weatherData: weatherData)
-        }
+        WeatherDetailView(weatherData: weatherData)
         .onReceive(weather.closest()) { w in
             self.weatherData = w
         }
+        .navigationTitle("Weather")
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
